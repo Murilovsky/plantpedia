@@ -11,6 +11,7 @@ class MyPlantsPage extends StatelessWidget {
       body: Padding(
         padding: const EdgeInsets.all(16.0),
         child: GridView.count(
+            childAspectRatio: 0.8,
             crossAxisCount: 2,
             children: [PlantCard(), PlantCard(), PlantCard(), PlantCard()]),
       ),
