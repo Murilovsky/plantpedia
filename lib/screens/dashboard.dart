@@ -17,7 +17,11 @@ class _DashboardState extends State<Dashboard> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('PlantPedia'),
+        title: const Text('PlantPedia',
+            style: TextStyle(
+                fontFamily: 'Patrick',
+                fontWeight: FontWeight.bold,
+                fontSize: 32)),
         centerTitle: true,
         bottomOpacity: 80,
       ),

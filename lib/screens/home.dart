@@ -7,7 +7,7 @@ class HomePage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       body: SingleChildScrollView(
-        child: Column(children: [Text('Esta é a página de "Home" ')]),
+        child: Column(children: const [Text('Esta é a página de "Home" ')]),
       ),
     );
   }

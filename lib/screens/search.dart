@@ -9,14 +9,15 @@ class SearchPage extends StatelessWidget {
       child: Padding(
         padding: const EdgeInsets.all(16.0),
         child: Column(mainAxisAlignment: MainAxisAlignment.center, children: [
-          Text('Pesquise sobre qualquer planta',
+          const Text('Pesquise sobre qualquer planta',
               style: TextStyle(fontSize: 16)),
-          SizedBox(height: 16),
+          const SizedBox(height: 16),
           TextField(
             controller: pesquisa,
             decoration: const InputDecoration(
                 hintText: 'Costela de Adão',
-                suffixIcon: Icon(Icons.search_rounded),
+                suffixIcon:
+                    IconButton(icon: Icon(Icons.search), onPressed: search),
                 border: OutlineInputBorder()),
             textAlign: TextAlign.center,
           )
@@ -24,4 +25,8 @@ class SearchPage extends StatelessWidget {
       ),
     );
   }
+}
+
+void search() {
+  print('Cacaca');
 }
